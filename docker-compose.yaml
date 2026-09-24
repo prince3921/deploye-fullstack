@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+  server:
+    build: ./server
+    ports:
+      - "3000:3000"
+    networks:
+      - fullstack-net
+    container_name: express-server
+  client:
+    build: ./client
+    ports:
+      - "80:5173"
+    networks:
+      - fullstack-net
+    container_name: react-client
+    depends_on:
+      - server
+networks:
+  fullstack-net:
