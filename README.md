@@ -7,6 +7,9 @@
 5. docker-compose through run client and server application both
 
 ### run application
+git clone https://github.com/prince3921/deploye-fullstack.git
+cd deploye-fullstack
+
 ```sh
 # run all containers in background
 docker compose up -d
