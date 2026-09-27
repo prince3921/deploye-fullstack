@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState("")
 
   useEffect(()=>{
-  fetch(`${import.meta.env.VITE_DEVLOPEMENT_URL}/api/message`)
+  fetch(`${import.meta.env.VITE_API_URL}/api/message`)
   .then((data)=>{
     return data.json()
   }).then((data)=>{
